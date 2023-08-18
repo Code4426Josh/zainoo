@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0 2em 0 2em;
+  font-family: "Sofia Sans", sans-serif;
+}
+li:hover {
+  color: #ffbf00;
+}
+.fsect {
+  writing-mode: vertical-rl;
+}
+button {
+  height: 72px;
+  width: 185px;
+  font-family: inherit;
+}
+.add:hover {
+  background: #ffff;
+  color: #121212;
+  border: 1px solid black;
+  transition: 0.5s ease-in;
+}
+.rem:hover {
+  background: #121212;
+  color: #ffff;
+  border: 1px solid black;
+  transition: 0.5s ease-in;
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0 1em;
+  }
+  nav {
+    position: fixed;
+    /* top: 0; */
+    width: 94%;
+    background: #ffff;
+    z-index: 2;
+  }
+  .nav-con {
+    margin: 1em 0;
+  }
+  .menu {
+    gap: 1em;
+    flex-direction: row-reverse;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .hamburger {
+    display: block;
+  }
+  /* -------------------------------- main -------------------------------- */
+  .body-con {
+    flex-direction: column;
+  }
+  .body-con .lists {
+    position: absolute;
+    background: #000;
+    padding: 1em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    gap: 10px;
+    display: none;
+  }
+  .extral {
+    display: none;
+  }
+  .main-con {
+    flex-direction: column-reverse;
+    padding-top: 4em;
+  }
+  .art-1 {
+    /* height: 100%; */
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  .art-1 > h2 {
+    font-size: 50px;
+  }
+  .art-1 button {
+    height: 5;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .art-1 button > a{
+    justify-content: baseline;
+  }
+  .img-con{
+    /* display: none; */
+    height: 10%;
+    padding: 0;
+    background: #ffff;
+  }
+  .img1{
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .img2{
+    height: 120px;
+    top: -17.5em;
+    left: 9em;
+    z-index: 0;
+  }
+  .fsect{
+    writing-mode: initial;
+    text-align: center;
+  }
+  .mid{
+    text-align: center;
+  }
+  .foot{
+    flex-direction: column;
+    text-align: center;
+  }
+  .foot1{
+    text-align: center;
+  }
+}
