@@ -837,7 +837,6 @@ button {
 
   nav {
     position: fixed;
-    /* top: 0; */
     width: 94%;
     background: #ffff;
     z-index: 2;
@@ -887,7 +886,6 @@ button {
   }
 
   .art-1 {
-    /* height: 100%; */
     width: 100%;
     left: 0;
     text-align: center;
@@ -909,7 +907,6 @@ button {
   }
 
   .img-con{
-    /* display: none; */
     height: 10%;
     padding: 0;
     background: #ffff;
@@ -931,19 +928,15 @@ button {
 
   .fsect{
     writing-mode: initial;
-    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .sm\:items-center {
+    align-items: center;
   }
 
-  .mid{
-    text-align: center;
-  }
-
-  .foot{
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .foot1{
+  .sm\:text-center {
     text-align: center;
   }
 }
