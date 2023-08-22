@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.universal {
   padding: 0 2em 0 2em;
   font-family: "Sofia Sans", sans-serif;
 }
@@ -30,17 +30,17 @@ button {
   transition: 0.5s ease-in;
 }
 @media screen and (max-width: 767px) {
-  body {
+  .universal {
     padding: 0 1em;
   }
-  nav {
-    position: fixed;
-    width: 94%;
-    background: #ffff;
-    z-index: 2;
-  }
   .nav-con {
-    margin: 1em 0;
+    margin: 0 0 1em 0;
+    padding: 1em 1em;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background: #f1f3f5;
+    z-index: 3;
   }
   .menu {
     gap: 1em;
@@ -58,13 +58,19 @@ button {
   }
   .body-con .lists {
     position: absolute;
-    background: #000;
+    background: #f1f3f5;
     padding: 1em;
     height: 100%;
-    top: 0;
+    width: 50%;
+    top: 3em;
     left: 0;
-    gap: 10px;
-    display: none;
+    margin-bottom: 0;
+    z-index: 2;
+    /* display: none; */
+  }
+  .nav-li:hover{
+    background: #000;
+    font-size: 4em;
   }
   .extral {
     display: none;

@@ -29,151 +29,153 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <section class="nav-con my-[1em] flex justify-between items-center">
-        <div class="menu flex justify-center items-center">
-          <h3 class="logo text-[2em] font-bold cursor-pointer font-['Inter']">
-            <a href="#">Zainoo<sup>TM</sup></a>
-          </h3>
-          <div class="hamburger hidden cursor-pointer">
-            <span
-              class="block h-[3px] w-7 bg-black rounded-full mb-[4px]"
-            ></span>
-            <span
-              class="block h-[3px] w-7 bg-black rounded-full mb-[4px]"
-            ></span>
-            <span class="block h-[3px] w-7 bg-black rounded-full"></span>
-          </div>
-        </div>
-        <div>
-          <ul
-            class="text-[1.5em] font-[10] flex justify-center items-center gap-5"
-          >
-            <li class="">
-              <a href="#"><ion-icon name="search-outline"></ion-icon></a>
-            </li>
-            <li class="">
-              <a href="#"><ion-icon name="bag-outline"></ion-icon></a>
-            </li>
-            <li class="">
-              <a href="#"><ion-icon name="person-outline"></ion-icon></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </nav>
-    <main>
-      <section class="body-con pt-[2em] flex justify-between">
-        <!-- ---------------------------- sidebar ---------------------------- -->
-        <section class="">
-          <ul
-            class="lists capitalize text-[1.375em] grid gap-y-[2em] font-light text-[#8f7d7d] mb-[4em]"
-          >
-            <li><a href="">shoes</a></li>
-            <li><a href="">bags</a></li>
-            <li><a href="">accessories</a></li>
-            <li><a href="">support</a></li>
-          </ul>
-          <div class="">
-            <article class="extral flex gap-1 leading-none mb-[40px]">
-              <div class="bg-black text-white font-bold text-[2em]">
-                <h2>Extra</h2>
-                <h2>Care</h2>
-              </div>
-              <div class="text-[2em] font-medium">
-                <h2>Foot</h2>
-                <h2>Care</h2>
-              </div>
-            </article>
-            <div class="extral flex items-center gap-6">
-              <h1>
-                <span
-                  class="block h-[1px] w-[40px] bg-black rounded-full"
-                ></span>
-              </h1>
-              <p><a href="#">learn more</a></p>
+    <section class="universal">
+      <nav>
+        <section class="nav-con my-[1em] flex justify-between items-center">
+          <div class="menu flex justify-center items-center">
+            <h3 class="logo text-[2em] font-bold cursor-pointer font-['Inter']">
+              <a href="#">Zainoo<sup>TM</sup></a>
+            </h3>
+            <div class="hamburger hidden cursor-pointer">
+              <span
+                class="block h-[3px] w-7 bg-black rounded-full mb-[4px]"
+              ></span>
+              <span
+                class="block h-[3px] w-7 bg-black rounded-full mb-[4px]"
+              ></span>
+              <span class="block h-[3px] w-7 bg-black rounded-full"></span>
             </div>
+          </div>
+          <div>
+            <ul
+              class="text-[1.5em] font-[10] flex justify-center items-center gap-5"
+            >
+              <li class="">
+                <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+              </li>
+              <li class="">
+                <a href="#"><ion-icon name="bag-outline"></ion-icon></a>
+              </li>
+              <li class="">
+                <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+              </li>
+            </ul>
           </div>
         </section>
-        <!-- -------------------------- main page -------------------------- -->
-        <section class="">
-          <div class="main-con flex pt-[4em]">
-            <article class="art-1 h-[319px] w-[60%] left-[5em] relative">
-              <h5 class="text-[21px] text-[#8f7d7d] mb-[10px]">
-                The best looks, Top Comfort
-              </h5>
-              <h2 class="text-[62px] text-black leading-[60px] capitalize">
-                comfy maxer
-              </h2>
-              <p class="text-[21px] text-[#8f7d7d] mb-[10px]">
-                Our shoes an insole that cushions every move, laces that you'll
-                never need to tie again, and an odor-fighting copper thread
-                lining
-              </p>
-              <div class="flex gap-5">
-                <div>
-                  <button class="add bg-black text-white rounded-md capitalize">
-                    <a
-                      class="flex items-center justify-center text-center"
-                      href=""
-                      ><ion-icon
-                        class="text-[20px] pr-2"
-                        name="bag-remove-outline"
-                      ></ion-icon
-                      >add to cart</a>
-                  </button>
+      </nav>
+      <main>
+        <section class="body-con pt-[2em] flex justify-between">
+          <!-- ---------------------------- sidebar ---------------------------- -->
+          <section class="">
+            <ul
+              class="lists capitalize text-[1.375em] flex flex-col gap-y-[2em] font-light text-[#8f7d7d] mb-[4em] sm:gap-y-[3em]"
+            >
+              <li class="nav-li"><a href="">shoes</a></li>
+              <li><a href="">bags</a></li>
+              <li><a href="">accessories</a></li>
+              <li><a href="">support</a></li>
+            </ul>
+            <div class="">
+              <article class="extral flex gap-1 leading-none mb-[40px]">
+                <div class="bg-black text-white font-bold text-[2em]">
+                  <h2>Extra</h2>
+                  <h2>Care</h2>
                 </div>
-                <div>
-                  <button
-                    class="rem capitalize rounded-md border-[1px] border-black"
-                  >
-                    <a
-                      class="flex items-center justify-center text-center"
-                      href=""
-                      ><ion-icon
-                        class="text-[20px] pr-2"
-                        name="play-circle-outline"
-                      ></ion-icon>
-                      watch intro</a
-                    >
-                  </button>
+                <div class="text-[2em] font-medium">
+                  <h2>Foot</h2>
+                  <h2>Care</h2>
                 </div>
+              </article>
+              <div class="extral flex items-center gap-6">
+                <h1>
+                  <span
+                    class="block h-[1px] w-[40px] bg-black rounded-full"
+                  ></span>
+                </h1>
+                <p><a href="#">learn more</a></p>
               </div>
-            </article>
-            <div class="img-con bg-gray-200">
-              <img
-                class="img1 absolute h-[87%] top-[5.5em] right-[6em] z-10"
-                src="/img/image_2-removebg-preview.png"
-                alt=""
-              />
-              <img
-                class="img1 img2 absolute h-[35%] top-[7em] right-[8em]"
-                src="/img/94.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
-        <!-- --------------------------- footer ---------------------------- -->
-        <footer class="mid">
-          <section class="foot flex flex-col justify-between h-full sm:text-center sm:items-center">
-            <div>
-              <ul class="foot1 text-[0.875em] font-bold fsect flex gap-4">
-                <li><a href="">team</a></li>
-                <li><a href="">packaging</a></li>
-                <li><a href="">manufacturing</a></li>
-              </ul>
-            </div>
-            <div>
-              <ul class="fsect foot1 text-[0.875em] font-bold fsect flex gap-4">
-                <li><a href="">in</a></li>
-                <li><a href="">tw</a></li>
-                <li><a href="">fb</a></li>
-              </ul>
             </div>
           </section>
-        </footer>
-      </section>
-    </main>
+          <!-- -------------------------- main page -------------------------- -->
+          <section class="">
+            <div class="main-con flex pt-[4em]">
+              <article class="art-1 h-[319px] w-[60%] left-[5em] relative">
+                <h5 class="text-[21px] text-[#8f7d7d] mb-[10px]">
+                  The best looks, Top Comfort
+                </h5>
+                <h2 class="text-[62px] text-black leading-[60px] capitalize">
+                  comfy maxer
+                </h2>
+                <p class="text-[21px] text-[#8f7d7d] mb-[10px]">
+                  Our shoes an insole that cushions every move, laces that you'll
+                  never need to tie again, and an odor-fighting copper thread
+                  lining
+                </p>
+                <div class="flex gap-5">
+                  <div>
+                    <button class="add bg-black text-white rounded-md capitalize">
+                      <a
+                        class="flex items-center justify-center text-center"
+                        href=""
+                        ><ion-icon
+                          class="text-[20px] pr-2"
+                          name="bag-remove-outline"
+                        ></ion-icon
+                        >add to cart</a>
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      class="rem capitalize rounded-md border-[1px] border-black"
+                    >
+                      <a
+                        class="flex items-center justify-center text-center"
+                        href=""
+                        ><ion-icon
+                          class="text-[20px] pr-2"
+                          name="play-circle-outline"
+                        ></ion-icon>
+                        watch intro</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <div class="img-con bg-gray-200">
+                <img
+                  class="img1 absolute h-[87%] top-[5.5em] right-[6em] z-10"
+                  src="/img/image_2-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  class="img1 img2 absolute h-[35%] top-[7em] right-[8em]"
+                  src="/img/94.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+          <!-- --------------------------- footer ---------------------------- -->
+          <footer class="mid">
+            <section class="foot flex flex-col justify-between h-full sm:text-center sm:items-center">
+              <div>
+                <ul class="foot1 text-[0.875em] font-bold fsect flex gap-4">
+                  <li><a href="">team</a></li>
+                  <li><a href="">packaging</a></li>
+                  <li><a href="">manufacturing</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul class="fsect foot1 text-[0.875em] font-bold fsect flex gap-4">
+                  <li><a href="">in</a></li>
+                  <li><a href="">tw</a></li>
+                  <li><a href="">fb</a></li>
+                </ul>
+              </div>
+            </section>
+          </footer>
+        </section>
+      </main>
+    </section>
   </body>
 </html>
