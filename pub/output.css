@@ -861,21 +861,20 @@ button {
   }
 
   .body-con .lists {
-    position: absolute;
+    position: fixed;
     background: #f1f3f5;
     padding: 1em;
     height: 100%;
     width: 50%;
     top: 3em;
-    left: 0;
+    left: -10em;
     margin-bottom: 0;
     z-index: 2;
-    /* display: none; */
+    transition: 1s ease-in;
   }
 
-  .nav-li:hover{
-    background: #000;
-    font-size: 4em;
+  .body-con .show-list{
+    left: 0;
   }
 
   .extral {

@@ -6,7 +6,7 @@
     <title>Zainoo</title>
     <!-- ------------------------------- links ------------------------------- -->
     <link rel="stylesheet" href="/pub/output.css">
-    <script src="./script.js"></script>
+    <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,10 +70,10 @@
             <ul
               class="lists capitalize text-[1.375em] flex flex-col gap-y-[2em] font-light text-[#8f7d7d] mb-[4em] sm:gap-y-[3em]"
             >
-              <li class="nav-li"><a href="">shoes</a></li>
-              <li><a href="">bags</a></li>
-              <li><a href="">accessories</a></li>
-              <li><a href="">support</a></li>
+              <li id="click"><a href="#">shoes</a></li>
+              <li><a href="#">bags</a></li>
+              <li><a href="#">accessories</a></li>
+              <li><a href="#">support</a></li>
             </ul>
             <div class="">
               <article class="extral flex gap-1 leading-none mb-[40px]">
@@ -111,7 +111,7 @@
                   never need to tie again, and an odor-fighting copper thread
                   lining
                 </p>
-                <div class="flex gap-5">
+                <div class="flex gap-5 sm:text-center">
                   <div>
                     <button class="add bg-black text-white rounded-md capitalize">
                       <a
