@@ -29,7 +29,7 @@ button {
   border: 1px solid black;
   transition: 0.5s ease-in;
 }
-@media screen and (max-width: 767px) {
+@media (width <= 767px) {
   .universal {
     padding: 0 1em;
   }
@@ -52,6 +52,15 @@ button {
   .hamburger {
     display: block;
   }
+  .hamburger.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bars:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.active .bars:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
   /* -------------------------------- main -------------------------------- */
   .body-con {
     flex-direction: column;
@@ -68,7 +77,7 @@ button {
     z-index: 2;
     transition: 1s ease-in;
   }
-  .body-con .show-list{
+  .body-con .show-list {
     left: 0;
   }
   .extral {
@@ -76,7 +85,7 @@ button {
   }
   .main-con {
     flex-direction: column-reverse;
-    padding-top: 4em;
+    /* padding-top: 4em; */
   }
   .art-1 {
     width: 100%;
@@ -92,27 +101,115 @@ button {
     padding: 10px 30px;
     font-size: 15px;
   }
-  .art-1 button > a{
+  .art-1 button > a {
     justify-content: baseline;
   }
-  .img-con{
+  .img-con {
     height: 10%;
     padding: 0;
     background: #ffff;
   }
-  .img1{
+  .img1 {
     position: relative;
     top: 0;
     right: 0;
     z-index: 1;
   }
-  .img2{
+  .img2 {
     height: 120px;
     top: -17.5em;
     left: 9em;
     z-index: 0;
   }
-  .fsect{
+  .fsect {
     writing-mode: initial;
+  }
+  .foot {
+    border-top: 2px solid black;
+  }
+}
+/* ------------------------------ medium screen ----------------------------- */
+@media (768px < width <= 1023px) {
+  .nav-con {
+    margin: 0 0 1em 0;
+    padding: 1em 1em;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background: #f1f3f5;
+    z-index: 3;
+  }
+  .menu {
+    gap: 1em;
+    flex-direction: row-reverse;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bars:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger.active .bars:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .body-con {
+    flex-direction: column;
+  }
+  .body-con .lists {
+    position: fixed;
+    background: #f1f3f5;
+    padding: 1em;
+    height: 100%;
+    width: 30%;
+    top: 3em;
+    left: -20em;
+    margin-bottom: 0;
+    z-index: 2;
+    transition: 1s ease-in;
+  }
+  .body-con .show-list {
+    left: 0;
+  }
+  .extral {
+    display: none;
+  }
+  .main-con {
+    flex-direction: column-reverse;
+  }
+  .art-1 {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  .img-con {
+    background: #f1f3f5;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .img1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .img2 {
+    height: 150px;
+    top: 10.5em;
+    left: 6em;
+    z-index: 0;
+  }
+  .fsect {
+    writing-mode: initial;
+  }
+  .foot {
+    border-top: 2px solid black;
   }
 }
