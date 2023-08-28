@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zainoo</title>
     <!-- ------------------------------- links ------------------------------- -->
-    <link rel="stylesheet" href="/pub/output.css">
+    <link rel="stylesheet" href="/pub/output.css" />
     <script src="/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,9 +97,11 @@
             </div>
           </section>
           <!-- -------------------------- main page -------------------------- -->
-          <section class="">
+          <section class="hidden">
             <div class="main-con flex pt-[4em]">
-              <article class="art-1 h-[319px] w-[60%] left-[5em] relative md:mt-[20px]">
+              <article
+                class="art-1 h-[319px] w-[60%] left-[5em] relative md:mt-[20px]"
+              >
                 <h5 class="text-[21px] text-[#8f7d7d] mb-[10px]">
                   The best looks, Top Comfort
                 </h5>
@@ -107,13 +109,17 @@
                   comfy maxer
                 </h2>
                 <p class="text-[21px] text-[#8f7d7d] mb-[10px]">
-                  Our shoes an insole that cushions every move, laces that you'll
-                  never need to tie again, and an odor-fighting copper thread
-                  lining
+                  Our shoes an insole that cushions every move, laces that
+                  you'll never need to tie again, and an odor-fighting copper
+                  thread lining
                 </p>
-                <div class="flex gap-5 sm:justify-center sm:text-center md:justify-center md:mt-[25px]">
+                <div
+                  class="flex gap-5 sm:justify-center sm:text-center md:justify-center md:mt-[25px]"
+                >
                   <div>
-                    <button class="add bg-black text-white rounded-md capitalize">
+                    <button
+                      class="add bg-black text-white rounded-md capitalize"
+                    >
                       <a
                         class="flex items-center justify-center text-center"
                         href=""
@@ -121,7 +127,8 @@
                           class="text-[20px] pr-2"
                           name="bag-remove-outline"
                         ></ion-icon
-                        >add to cart</a>
+                        >add to cart</a
+                      >
                     </button>
                   </div>
                   <div>
@@ -156,23 +163,71 @@
             </div>
           </section>
           <!-- ----------------------- products-sec ------------------------ -->
-          <section>
-            <div>
-              
-            </div>
-          </section>
-          <section>
-            <div></div>
-          </section>
-          <section>
-            <div></div>
-          </section>
-          <section>
-            <div></div>
-          </section>
+          <article>
+            <ul class="pro-nav flex gap-6 text-[15px] capitalize">
+              <li><a href="#">all</a></li>
+              <li><a href="#">kids</a></li>
+              <li><a href="#">men</a></li>
+              <li><a href="#">women</a></li>
+            </ul>
+            <section>
+              <div class="h-[20%] w-[20%] bg-[#f1f5e6] p-[10px] rounded-lg">
+                <div class="relative">
+                  <img
+                    class="rounded-md"
+                    src="/img/pexels-hamza-nouasria-12628402.jpg"
+                    alt=""
+                  />
+                  <span class="absolute top-1 right-2"
+                    ><ion-icon
+                      class="text-[20px] text-white cursor-pointer hover:text-red-600"
+                      name="heart-outline"
+                    ></ion-icon
+                  ></span>
+                </div>
+                <div>
+                  <h3 class="text-[15px] font-bold capitalize">
+                    nike (airforce 1)
+                  </h3>
+                  <span>
+                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
+                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
+                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
+                    <ion-icon
+                      class="text-[#FFD700]"
+                      name="star-half"
+                    ></ion-icon>
+                  </span>
+                  <p>$100</p>
+                  <section class="flex justify-between items-center">
+                    <div class="flex gap-3 items-center justify-center">
+                      <span
+                        class="cursor-pointer bg-white w-[30px] h-[30px] p-[.5em] rounded-full flex justify-center items-center"
+                        ><ion-icon name="add-outline"></ion-icon
+                      ></span>
+                      <p>0</p>
+                      <span
+                        class="cursor-pointer bg-white w-[30px] h-[30px] p-[.5em] rounded-full flex justify-center items-center"
+                        ><ion-icon name="remove-outline"></ion-icon>
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        class="bg-white px-[1.5em] py-[.5em] flex items-center justify-center rounded-2xl hover:bg-[#ffbf00] hover:text-gray-800 duration-200 ease-in cursor-pointer to-cart"
+                        ><ion-icon name="bag-add-outline"></ion-icon
+                      ></span>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <!-- <ion-icon class="text-red-700 " name="heart"></ion-icon> -->
+          </article>
           <!-- --------------------------- footer ---------------------------- -->
           <footer class="mid">
-            <section class="foot flex flex-col justify-between h-full sm:text-center sm:items-center md:items-center md:text-center">
+            <section
+              class="foot flex flex-col justify-between h-full sm:text-center sm:items-center md:items-center md:text-center"
+            >
               <div>
                 <ul class="foot1 text-[0.875em] font-bold fsect flex gap-4">
                   <li><a href="">team</a></li>
@@ -181,7 +236,9 @@
                 </ul>
               </div>
               <div>
-                <ul class="fsect foot1 text-[0.875em] font-bold fsect flex gap-4">
+                <ul
+                  class="fsect foot1 text-[0.875em] font-bold fsect flex gap-4"
+                >
                   <li><a href="">in</a></li>
                   <li><a href="">tw</a></li>
                   <li><a href="">fb</a></li>

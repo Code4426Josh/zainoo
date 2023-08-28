@@ -29,6 +29,15 @@ button {
   border: 1px solid black;
   transition: 0.5s ease-in;
 }
+/* -------------------------------- products -------------------------------- */
+.pro-nav{
+  border-bottom: 1px solid black;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+.to-cart:hover{
+  transform: scale(1.2);
+}
 @media (width <= 767px) {
   .universal {
     padding: 0 1em;
