@@ -29,6 +29,9 @@ button {
   border: 1px solid black;
   transition: 0.5s ease-in;
 }
+.color{
+  color: red;
+}
 /* -------------------------------- products -------------------------------- */
 @media (width <= 767px) {
   .universal {
