@@ -616,6 +616,10 @@ video {
   display: none;
 }
 
+.h-\[15\%\] {
+  height: 15%;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
@@ -646,10 +650,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[15\%\] {
-  height: 15%;
 }
 
 .w-7 {
