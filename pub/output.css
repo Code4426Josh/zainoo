@@ -835,6 +835,22 @@ video {
   font-size: 62px;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[1px\] {
+  font-size: 1px;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
 .font-\[10\] {
   font-weight: 10;
 }

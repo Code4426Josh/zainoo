@@ -28,11 +28,14 @@ navLinks.forEach(function (clickers) {
 });
 
 // Products APIs
-
-// fetch products by categories
+d
+// fetch proucts by categories
 const fetchProducts = async (category) => {
   let results = [];
   let categories = [];
+  let productsDiv = "";
+
+  sectionDiv.innerHTML = "";
 
   switch (category) {
     case "shoes":
@@ -56,20 +59,15 @@ const fetchProducts = async (category) => {
     // Push each product object to the results array
     const products = json.products.flatMap((p) => p);
     results.push(...products);
-  });
-  console.log(results);
 
-  // add to div
-  let productsDiv = "";
-
-  // productEl.classList.add('product');
-  results.forEach((product) => {
-    productsDiv += `
-            <div class="h-[15%] w-[20%] bg-[#f1f5e6] p-[10px] rounded-lg">
+    results.forEach((product) => {
+      console.log(product)
+      productsDiv += `
+           <div id="product" class="h-[15%] w-[20%] bg-[#f1f5e6] p-[10px] rounded-lg">
               <div class="relative">
                   <img
                     class="rounded-md"
-                    src="/img/pexels-hamza-nouasria-12628402.jpg"
+                    src=${product.thumbnail}
                     alt=""
                   />
                   <span class="absolute top-1 right-2"
@@ -80,19 +78,13 @@ const fetchProducts = async (category) => {
                   ></span>
                 </div>
                 <div>
-                  <h3 class="text-[15px] font-bold capitalize">
+                  <h3 class="text-[11px] font-bold capitalize">
                     ${product.title}
                   </h3>
                   <span>
-                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
-                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
-                    <ion-icon class="text-[#FFD700]" name="star"></ion-icon>
-                    <ion-icon
-                      class="text-[#FFD700]"
-                      name="star-half"
-                    ></ion-icon>
+                    ${handleRating(product.rating)}
                   </span>
-                  <p>${product.price}</p>
+                  <p>$${product.price}</p>
                   <section class="flex justify-between items-center">
                     <div class="flex gap-3 items-center justify-center">
                       <span
@@ -112,16 +104,14 @@ const fetchProducts = async (category) => {
                       ></span>
                     </div>
                   </section>
-                </div>
               </div>
+            </div>
             `;
+    });
 
     // Insert into HTML
     sectionDiv.innerHTML = productsDiv;
   });
-
-
-  console.log(sectionDiv)
 };
 
 // fetchProducts("shoes");
@@ -141,6 +131,30 @@ const handleClickCategories = (e) => {
   e.preventDefault();
   showProducts();
 };
+
+const handleRating = (rating) => {
+
+  // Round down rating 
+  const fullStars = Math.floor(rating);
+
+  // Get remainder for half star
+  const halfStar = rating % 1 !== 0;
+
+  let starsHTML = '';
+
+  // Loop to generate full stars
+  for (let i = 0; i < fullStars; i++) {
+    starsHTML += `<ion-icon class="text-[#FFD700]" name="star"></ion-icon>`;
+  }
+
+  // Add half star if needed
+  if (halfStar) {
+    starsHTML += `<ion-icon class="text-[#FFD700]" name="star-half"></ion-icon>`;
+  }
+
+  // Insert stars HTML
+  return starsHTML
+}
 
 const showProducts = async () => {
   await fetchProducts("shoes");
