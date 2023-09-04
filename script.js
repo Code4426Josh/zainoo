@@ -16,9 +16,9 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   listCon.classList.toggle("show-list");
 });
-like.addEventListener("click", function () {
-  like.classList.toggle("color");
-});
+// like.addEventListener("click", function () {
+//   like.classList.toggle("color");
+// });
 /* --------------------------- remove class when click link --------------------------- */
 navLinks.forEach(function (clickers) {
   clickers.addEventListener("click", () => {
@@ -28,7 +28,6 @@ navLinks.forEach(function (clickers) {
 });
 
 // Products APIs
-d
 // fetch proucts by categories
 const fetchProducts = async (category) => {
   let results = [];
@@ -59,14 +58,16 @@ const fetchProducts = async (category) => {
     // Push each product object to the results array
     const products = json.products.flatMap((p) => p);
     results.push(...products);
+    console.log('results: ', results);
 
-    results.forEach((product) => {
-      console.log(product)
-      productsDiv += `
-           <div id="product" class="h-[15%] w-[20%] bg-[#f1f5e6] p-[10px] rounded-lg">
+    if (results.length > 5) {
+      results.forEach((product) => {
+        console.log(product)
+        productsDiv += `
+          <div id="product" class="h-[15%] w-[18%] bg-[#f1f5e6] p-[18px] rounded-lg">
               <div class="relative">
                   <img
-                    class="rounded-md"
+                    class="rounded-md object-contain"
                     src=${product.thumbnail}
                     alt=""
                   />
@@ -107,7 +108,8 @@ const fetchProducts = async (category) => {
               </div>
             </div>
             `;
-    });
+      })
+    };
 
     // Insert into HTML
     sectionDiv.innerHTML = productsDiv;
