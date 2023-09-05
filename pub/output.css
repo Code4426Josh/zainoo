@@ -604,6 +604,10 @@ video {
   margin-bottom: 4px;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .block {
   display: block;
 }
@@ -726,6 +730,14 @@ video {
 
 .gap-y-\[2em\] {
   row-gap: 2em;
+}
+
+.gap-y-\[em\] {
+  row-gap: em;
+}
+
+.gap-y-\[0em\] {
+  row-gap: 0em;
 }
 
 .rounded-2xl {

@@ -17,9 +17,6 @@ hamburger.addEventListener("click", () => {
   listCon.classList.toggle("show-list");
   
 });
-// like.addEventListener("click", function () {
-//   like.classList.toggle("color");
-// });
 /* --------------------------- remove class when click link --------------------------- */
 navLinks.forEach(function (clickers) {
   clickers.addEventListener("click", () => {
@@ -44,7 +41,7 @@ const fetchProducts = async (category) => {
     case "watches":
       categories = ["mens-watches", "womens-watches"];
       break;
-    case "shoes":
+    case "accessories":
       categories = ["womens-bags", "womens-jewellery", "sunglasses"];
       break;
 
@@ -111,8 +108,6 @@ const fetchProducts = async (category) => {
   });
 };
 
-// fetchProducts("shoes");
-
 // fetch a single product
 const fetchSingle = async (id) => {
   const res = await fetch(`${baseURL} /products/${id} `);
@@ -120,13 +115,11 @@ const fetchSingle = async (id) => {
   console.log(json);
 };
 
-// fetchSingle(50)
 
 // handle clicks function
-
-const handleClickCategories = (e) => {
-  e.preventDefault();
-  showProducts();
+const handleClickCategories = (category) => {
+  // e.preventDefault();
+  showProducts(category);
 };
 
 const handleRating = (rating) => {
@@ -153,8 +146,7 @@ const handleRating = (rating) => {
   return starsHTML
 }
 
-const showProducts = async () => {
-  await fetchProducts("shoes");
+const showProducts = async (category) => {
+  await fetchProducts(category);
 };
 
-// showProducts();
