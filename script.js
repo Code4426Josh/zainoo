@@ -15,6 +15,7 @@ console.log("sectionDiv: ", sectionDiv);
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   listCon.classList.toggle("show-list");
+  
 });
 // like.addEventListener("click", function () {
 //   like.classList.toggle("color");
@@ -65,18 +66,12 @@ const fetchProducts = async (category) => {
         console.log(product)
         productsDiv += `
           <div id="product" class="h-[15%] w-[18%] bg-[#f1f5e6] p-[18px] rounded-lg">
-              <div class="relative">
+              <div class="relative h-[300%]">
                   <img
-                    class="rounded-md object-contain"
+                    class="rounded-md object-contain h-[60%] w-[200%]"
                     src=${product.thumbnail}
                     alt=""
                   />
-                  <span class="absolute top-1 right-2"
-                    ><ion-icon
-                      class="text-[20px] text-white cursor-pointer liked"
-                      name="heart-outline"
-                    ></ion-icon
-                  ></span>
                 </div>
                 <div>
                   <h3 class="text-[11px] font-bold capitalize">
@@ -162,4 +157,4 @@ const showProducts = async () => {
   await fetchProducts("shoes");
 };
 
-showProducts();
+// showProducts();
